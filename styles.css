@@ -7,24 +7,24 @@
 }
 
 :root {
-  --gray-00: #ffffff;
-  --gray-05: #f5f6f7;
-  --gray-15: #d0d0d5;
-  --gray-75: #3b3b4f;
-  --gray-85: #1b1b32;
-  --gray-90: #0a0a23;
-  --blue-50: #198eee;
   --error: #a94442;
   --danger-color: #850000;
   --danger-background: #ffadad;
+
+  --main-yellow: #d79922;
+  --main-white: #fffbef;
+  --main-red: #ac3b61;
+  --main-orange: #ebd4cb;
+  --main-lightblue: #c5cbe3;
+  --main-font: #7c7c7b;
 }
 
 body {
   min-height: 100vh;
   padding: 50px 20px;
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  background-color: var(--gray-85);
-  color: var(--gray-00);
+  background-color: var(--main-white);
+  color: var(--main-red);
   font-size: 18px;
 }
 
@@ -33,11 +33,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.freecodecamp-logo {
-  height: 30px;
-  margin-bottom: 20px;
 }
 
 h1 {
@@ -49,13 +44,14 @@ h1 {
 }
 
 .form {
-  color: var(--gray-05);
+  color: var(--main-red);
   margin: 10px 25px;
-  border: 3px solid var(--gray-05);
+  border: 3px solid var(--main-red);
   text-align: center;
   width: 90%;
   max-width: 500px;
-  background-color: var(--gray-75);
+  background-color: var(--main-orange);
+  border-radius: 10px;
 }
 
 label {
@@ -73,8 +69,8 @@ input {
   padding: 6px 12px;
   margin: 10px 0;
   line-height: 1.4;
-  color: white;
-  background-color: var(--gray-90);
+  color: var(--main-orange);
+  background-color: var(--main-red);
   border: 1px solid var(--gray-05);
 }
 
@@ -82,8 +78,8 @@ button {
   cursor: pointer;
   margin-top: 15px;
   text-decoration: none;
-  background-image: linear-gradient(#fecc4c, #ffac33);
-  border: 3px solid #feac32;
+  background-image: linear-gradient(var(--main-orange), var(--main-red));
+  border: 3px solid var(--main-red);
   padding: 10px 16px;
   font-size: 23px;
   width: 100%;
@@ -97,9 +93,10 @@ fieldset {
 }
 
 .output {
-  color: white;
-  background-color: var(--gray-75);
-  border: 3px solid var(--gray-05);
+  color: var(--main-white);
+  background-color: var(--main-red);
+  border: 3px solid var(--main-white);
+  border-radius: 10px;
   font-size: 2.5rem;
   width: 90%;
   max-width: 500px;
@@ -117,6 +114,7 @@ fieldset {
 .alert {
   font-size: 1.5rem;
   background-color: var(--danger-background);
-  border: 3px solid var(--danger-color);
-  color: var(--danger-color);
+  border: 3px solid var(--main-red);
+  border-radius: 10px;
+  color: var(--main-red);
 }
